@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+background-color:rgba(28,33,74,1);
+background: linear-gradient(45deg, rgba(28,33,74,1) , rgba(0,0,0,1));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search{
+    margin-top: 75px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    margin-top: 62px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
   }
+    
+.title{
+
+    margin-top: 32px;
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: bold;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover{
+
+    box-shadow: 5px 6px 6px 5px rgba(28,33,74,1);
+    transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+.no{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#se:hover{
+    cursor: pointer;
+    width: 36px;
 }
